@@ -24,10 +24,13 @@
         position: relative;
         height: 535px;
     }
+    .caja_texto{
+        position: relative;
+        margin: 8% 5% 5% 10%;
+    }
 
     .botones{
         display: inline-grid;
-        padding-top: 385px;
         margin:auto;
         position: relative;
         top: 0%;
@@ -36,7 +39,7 @@
         transform: none;
     }
     .btn-encriptar{
-        margin-top: 20px;
+        margin-top: 5px;
         width: 336px;;
     }
     .btn-desencriptar{
@@ -64,11 +67,22 @@
 
     p{
         width: auto;
+        font-size: 1.2rem;
     }
 
 
 
 }
+
+@media (max-width:600px) {
+    .form-textbox, .form-textarea, .form-radio-item, .form-checkbox-item, .form-captcha input, .form-spinner input, .form-error-message {
+    
+    height : 40px !important;
+    
+    }
+    }
+    
+    
 
 
 
