@@ -86,6 +86,13 @@
         border-radius: 30px;
         height: 270px;
     }
+    .copy_text{
+        height: 100px;
+    
+      }
+      .pie_pagina, .pie_pagina_two{
+        text-align: center;
+      }
 
 
 

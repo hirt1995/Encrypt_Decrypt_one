@@ -255,3 +255,23 @@ p{
       opacity: 1;
     }
 
+    .autoria{
+      text-align: center;
+    }
+    .copy_text{
+      background: #77a6f7;
+      height: 10px;
+      padding: 5%;
+  
+    }
+
+    .pie_pagina{
+      padding-top: 5px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .pie_pagina_two{
+      padding-top: 5px;
+      display: inline-block;
+      font-weight: bold;
+    }
