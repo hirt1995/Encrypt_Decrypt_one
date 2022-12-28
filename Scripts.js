@@ -5,15 +5,18 @@ function encriptarTexto(){
     if (textarea == ""){
         document.getElementById('textoEncriptado').innerHTML= "";
         if(screen.width < 480){
-            document.getElementById("no_encontrado").style.visibility = "hidden";
-            document.getElementById("no_encontrado_two").style.visibility = "visible";
+            document.getElementById("no_encontrado").style.display = "none";
+            document.getElementById("no_encontrado_two").style.display = "initial";
+            document.getElementById("textoEncriptado").innerHTML="";
 
         }else{
+            document.getElementById("textoEncriptado").innerHTML="";
             document.getElementById("no_encontrado").style.visibility = "visible";
         }
       
     } else {
         document.getElementById("no_encontrado").style.visibility = "hidden";
+        document.getElementById("no_encontrado_two").style.display = "none";
         var textoCifrado = textarea.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
         document.getElementById('textoEncriptado').innerHTML = textoCifrado;
     }
@@ -25,10 +28,18 @@ function desencriptarTexto (){
     var textarea = document.getElementById('Encriptar').value.toLowerCase();
 
     if (textarea == ""){
-        document.getElementById('textoEncriptado').innerHTML= "";
-        document.getElementById("no_encontrado").style.visibility = "visible";      
+        if(screen.width < 480){
+            document.getElementById("no_encontrado").style.display = "none";
+            document.getElementById("no_encontrado_two").style.display = "initial";
+            document.getElementById("textoEncriptado").innerHTML="";
+
+        }else{
+            document.getElementById("textoEncriptado").innerHTML="";
+            document.getElementById("no_encontrado").style.visibility = "visible";
+        }      
     } else {
         document.getElementById("no_encontrado").style.visibility = "hidden";
+        document.getElementById("no_encontrado_two").style.display = "none";
         var textoCifrado = textarea.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
         document.getElementById('textoEncriptado').innerHTML = textoCifrado;    
     }

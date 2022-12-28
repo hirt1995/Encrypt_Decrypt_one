@@ -15,7 +15,7 @@
         <div class="contenedor_supremo">
             <section class="ingresar_texto">
                 <div class="caja_texto">
-                    <textarea class="agregar_texto" name="text" id="Encriptar" cols="45" rows="15" placeholder="Ingresa lo que deseas encriptar o desencriptar." autofocus></textarea>
+                    <textarea class="agregar_texto" name="text" id="Encriptar" cols="45" rows="15" placeholder="Por favor ingresa el texo sin acentos" autofocus></textarea>
                 </div>
                 <div class="botones">
                     <button id="encriptando" class="btn-encriptar" value="oculto" onclick="encriptarTexto()">Encriptar</button>
@@ -24,7 +24,8 @@
             </section>
 
             <section class="resultado_proceso">
-                <div class="mostrar_msg" style= "overflow: auto;">
+                <div class="mostrar_msg">
+                    <img class="not_found_two" id="no_encontrado_two" src="images/no_encontrado_two.png" alt="alt texta">
                     <p id="textoEncriptado"></p>
                     <img class="not_found" id="no_encontrado" src="images/no_encontrado.png" alt="alt texta" style="visibility: hidden;">
                 </div>
