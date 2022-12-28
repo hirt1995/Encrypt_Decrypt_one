@@ -56,6 +56,7 @@ function copiarAlPortapapeles(id_elemento) {
     document.body.removeChild(aux);  
     }
 
+    //para notificaciones push
     const boton_copiar= document.querySelector("#btn_copiar");
    
     boton_copiar.addEventListener("click", () => {
